@@ -9,6 +9,7 @@ include(CheckLanguage)
 check_language(CUDA)
 
 if(CMAKE_CUDA_COMPILER)
+  set(CMAKE_CUDA_ARCHITECTURES 75)
   enable_language(CUDA)
 
   add_definitions(-DWITH_CUDA)
